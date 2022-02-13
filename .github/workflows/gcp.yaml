@@ -1,4 +1,4 @@
-name: python application second build
+name: GCP python 3.7
 on: [push]
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
           python-version: 3.7.12
       - name: Instatll dependencies
         run:  |
-          make install
+          make install-gcp
       - name: Lint
         run:  |
           make lint
